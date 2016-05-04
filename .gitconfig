@@ -114,7 +114,12 @@
 	rb = rebase
 	rev = remote -v
 	stat = status
-	
+	branches = branch -a
+	tags = tag
+	stashes = stash list
+	nuke = !git reset --hard HEAD && git clean -d -f
+	precommit = diff --cached --diff-algorithm=minimal -w
+
 	# Pretty log
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	list = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
