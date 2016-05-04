@@ -9,7 +9,7 @@ chmod 755 syncdotfiles.sh
 
 ##Description
 
-Seed is a folder for linking the home directory (~/) dotfiles with the repo (~/dotfiles/)
+Seed is a folder for linking the home directory "~/" dotfiles with the repo "~/dotfiles/"
 
 In the .gitconfig, make sure to change the name and email to your own.
 
