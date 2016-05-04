@@ -1,1 +1,137 @@
-/Users/Pacified/Google Drive/Mackup/.gitconfig
+#  ---------------------------------------------------------------------------
+#
+#  Description:  Andy's customized .gitconfig
+#
+#  Resources/References:
+#  http://git-scm.com/docs/git-config
+#  https://gist.github.com/pksunkara/988716
+#
+#  https://github.com/blog/2019-how-to-undo-almost-anything-with-git	
+#
+# 	1. Personal
+# 	2. Tools
+# 	3. URL insteadOf
+# 	4. Colours
+# 	5. Aliases
+#  ---------------------------------------------------------------------------
+
+# ==================================
+# 1. Personal
+# ==================================
+
+[user]
+	name = Andy Tung
+	email = andyytung@gmail.com
+
+[core]
+	autocrlf = input
+	editor = subl -n -w
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/dotfiles/.gitignore_global
+
+[github]
+	user = andyytung
+
+# ==================================
+# 2. Tools
+# ==================================
+
+[web]
+	browser = google-chrome
+
+[diff]
+  tool = meld
+
+[difftool]
+  prompt = false
+
+[difftool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+
+[merge]
+  tool = meld
+
+[mergetool]
+  prompt = false
+  
+[mergetool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output \"$PWD/$MERGED\"
+
+# ==================================
+# 3. URL insteadOf
+# ==================================
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[url "https://github.com/andyytung/"]
+    insteadOf = andy_gh:
+
+# ==================================
+# 4. Colours
+# ==================================
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+
+# ==================================
+# 5. Aliases
+# ==================================
+
+[alias]
+	addall = add --all
+	co = checkout
+	comast = checkout master
+	ci = commit
+	comend = commit --amend --no-edit
+	comendment = commit --amend
+	st = status
+	br = branch
+	rb = rebase
+	rev = remote -v
+	stat = status
+	
+	# Pretty log
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	list = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	wist = log --graph --oneline --decorate --date=relative --all
+	
+	# Give only the last commit in log
+	last = log -1 HEAD
+	# Comapres diff between current repository and the empty repository	
+	comparetonothing = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+	# Gives previous hash number eg. /dev/null tree
+	# `git hash-object -t tree /dev/null`
+	# Gives total lines
+	#total-lines = ls-files | xargs wc -l
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+	
+[commit]
+	template = ~/dotfiles/.git-commit-template.txt
