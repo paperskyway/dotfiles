@@ -3,7 +3,6 @@
 ##Usage
 
 ```
-chmod 755 syncdotfiles.sh
 ./syncdotfiles.sh
 ```
 

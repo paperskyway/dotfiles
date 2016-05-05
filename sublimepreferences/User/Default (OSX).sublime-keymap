@@ -1,0 +1,12 @@
+[
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+	{ "keys": ["super+alt+l"], "command": "reindent"},
+	{ "keys": ["super+alt+b"], "command": "reindent"},
+	{ "keys": ["super+v"], "command": "paste_and_indent" },
+	{ "keys": ["super+shift+v"], "command": "paste" },
+	{ "keys": ["super+shift+r"], "command": "toggle_side_bar"},
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{ "keys": ["super+k"], "command": "paste_from_history"}
+]
