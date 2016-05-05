@@ -117,8 +117,10 @@
 	branches = branch -a
 	tags = tag
 	stashes = stash list
+	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	precommit = diff --cached --diff-algorithm=minimal -w
+	unmerged = diff --name-only --diff-filter=U
 
 	# Pretty log
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
