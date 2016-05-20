@@ -117,6 +117,7 @@
 	branches = branch -a
 	tags = tag
 	stashes = stash list
+	stashpick = stash -p
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	precommit = diff --cached --diff-algorithm=minimal -w
