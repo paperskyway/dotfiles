@@ -121,6 +121,8 @@
 	nuke = !git reset --hard HEAD && git clean -d -f
 	precommit = diff --cached --diff-algorithm=minimal -w
 	unmerged = diff --name-only --diff-filter=U
+	prevhash = "hash-object -t tree /dev/null"
+	lasthash = rev-parse HEAD
 
 	# Pretty log
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -129,12 +131,9 @@
 	
 	# Give only the last commit in log
 	last = log -1 HEAD
-	# Comapres diff between current repository and the empty repository	
 	comparetonothing = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
-	# Gives previous hash number eg. /dev/null tree
-	# `git hash-object -t tree /dev/null`
-	# Gives total lines
-	#total-lines = ls-files | xargs wc -l
+	up = !git fetch && git rebase --autostash FETCH_HEAD
+	
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f

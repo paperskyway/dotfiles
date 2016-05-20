@@ -1,7 +1,6 @@
 {
 	"bold_folder_labels": false,
 	"caret_style": "phase",
-	"theme": "Material-Theme-Darker.sublime-theme",
 	"color_scheme": "Packages/User/SublimeLinter/Material-Theme-Darker-OceanicNext (SL).tmTheme",
 	"fade_fold_buttons": false,
 	"font_size": 13,
@@ -13,5 +12,6 @@
 	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
-	"save_on_focus_lost": false
+	"save_on_focus_lost": false,
+	"theme": "Material-Theme-Darker.sublime-theme"
 }

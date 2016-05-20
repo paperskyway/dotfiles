@@ -98,6 +98,8 @@ alias mvscreenshots="mv ~/Desktop/*.png ~/Pictures/Screenshots/"
 alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
 
+alias wordcount="ls-files | xargs wc -l"
+
 #   Network Aliases
 #   ------------------------------------------------------------
 alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' 
