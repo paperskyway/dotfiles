@@ -122,8 +122,7 @@
 	nuke = !git reset --hard HEAD && git clean -d -f
 	precommit = diff --cached --diff-algorithm=minimal -w
 	unmerged = diff --name-only --diff-filter=U
-	prevhash = "hash-object -t tree /dev/null"
-	lasthash = rev-parse HEAD
+	hash = rev-parse --short HEAD
 
 	# Pretty log
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short

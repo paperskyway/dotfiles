@@ -97,7 +97,7 @@ alias mvscreenshots="mv ~/Desktop/*.png ~/Pictures/Screenshots/"
                                             #mvscreenshots: Move all screenshots on desktop to screenshot folder
 alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
-
+alias copyhash="git rev-parse --short HEAD | pbcopy"
 alias wordcount="ls-files | xargs wc -l"
 
 #   Network Aliases
