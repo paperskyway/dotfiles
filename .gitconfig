@@ -27,7 +27,7 @@
 	autocrlf = input
 	editor = subl -n -w
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = ~/dotfiles/.gitignore_global
+	excludesfile = /Users/andytung/dotfiles/.gitignore_global
 
 [github]
 	user = andyytung
@@ -49,8 +49,11 @@
   trustExitCode = true
   cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
 
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+
 [merge]
-  tool = meld
+  tool = sourcetree
 
 [mergetool]
   prompt = false
@@ -58,6 +61,10 @@
 [mergetool "meld"]
   trustExitCode = true
   cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output \"$PWD/$MERGED\"
+
+[mergetool "sourcetree"]
+  cmd = /Users/andytung/Downloads/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 
 # ==================================
 # 3. URL insteadOf
