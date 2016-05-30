@@ -132,9 +132,7 @@
 	hash = rev-parse --short HEAD
 
 	# Pretty log
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	list = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
-	wist = log --graph --oneline --decorate --date=relative --all
+	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
 	
 	# Give only the last commit in log
 	last = log -1 HEAD
