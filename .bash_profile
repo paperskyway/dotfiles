@@ -28,8 +28,8 @@ export LSCOLORS="bxxxCxDxBxxxxxxxxxxxxx"
 
 #   Set Paths
 #   ------------------------------------------------------------
-export GOPATH="$HOME/Workspace/GoProjects"
-export PATH="$PATH:$GOPATH/bin"
+export GOPATH="$HOME/dotfiles/bin"
+export PATH="$PATH:$GOPATH"
 
 #   Set Default Editor
 #   ------------------------------------------------------------
