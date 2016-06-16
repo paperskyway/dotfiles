@@ -13,6 +13,7 @@
 # 	3. URL insteadOf
 # 	4. Colours
 # 	5. Aliases
+# 	6. Config
 #  ---------------------------------------------------------------------------
 
 # ==================================
@@ -28,7 +29,6 @@
 	editor = subl -n -w
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/andytung/dotfiles/.gitignore_global
-	pager = less -+F -+X
 
 [github]
 	user = andyytung
@@ -125,7 +125,8 @@
 	branches = branch -a
 	tags = tag
 	stashes = stash list
-	stashpick = stash -p
+	stashpatch = stash -p
+	addpatch = stash -p
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
@@ -139,7 +140,7 @@
 	
 	# Give only the last commit in log
 	last = log -1 HEAD
-	comparetonothing = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+	progress = !git --no-pager diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
 	up = !git fetch && git rebase --autostash FETCH_HEAD
 
 	# Serve local repo. http://coderwall.com/p/eybtga
@@ -157,8 +158,8 @@
 	mergeoptions = --no-edit
 
 [pager]
-	diff = diff-highlight | less -+F -+X
-	show = diff-highlight | less -+F -+X
+	diff = diff-highlight | less
+	show = diff-highlight | less
 
 [interactive]
 	diffFilter = diff-highlight
