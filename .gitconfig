@@ -28,6 +28,7 @@
 	editor = subl -n -w
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/andytung/dotfiles/.gitignore_global
+	pager = less -+F -+X
 
 [github]
 	user = andyytung
@@ -115,21 +116,23 @@
 	comast = checkout master
 	ci = commit
 	comend = commit --amend --no-edit
-	comendment = commit --amend
+	comender = commit --amend
 	st = status
 	br = branch
 	rb = rebase
 	rev = remote -v
-	stat = status
+	stat = !git --no-pager diff --stat
 	branches = branch -a
 	tags = tag
 	stashes = stash list
 	stashpick = stash -p
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
+	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 	precommit = diff --cached --diff-algorithm=minimal -w
 	unmerged = diff --name-only --diff-filter=U
 	hash = rev-parse --short HEAD
+	unstage = reset HEAD --
 
 	# Pretty log
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
@@ -139,10 +142,21 @@
 	comparetonothing = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
 	up = !git fetch && git rebase --autostash FETCH_HEAD
 
+	# Serve local repo. http://coderwall.com/p/eybtga
+    # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
+    serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+
+# ==================================
+# 6. Config
+# ==================================
+
+[help]
+  autocorrect = true
+
 [pager]
 	log = diff-highlight | less
 	show = diff-highlight | less
-	diff = diff-highlight | less
+	diff = true
 
 [interactive]
 	diffFilter = diff-highlight
@@ -154,3 +168,4 @@
 	
 [commit]
 	template = ~/dotfiles/.git-commit-template.txt
+	verbose = true
