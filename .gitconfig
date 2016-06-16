@@ -130,8 +130,8 @@
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
-	precommit = !git --no-pager diff --cached --diff-algorithm=minimal -w
-	unmerged = !git --no-pager diff --name-only --diff-filter=U
+	precommit = diff --cached --diff-algorithm=minimal -w
+	unmerged = diff --name-only --diff-filter=U
 	hash = rev-parse --short HEAD
 	unstage = reset HEAD --
 
