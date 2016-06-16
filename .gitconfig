@@ -153,10 +153,12 @@
 [help]
   autocorrect = true
 
+[branch "master"]
+	mergeoptions = --no-edit
+
 [pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = true
+	diff = diff-highlight | less -+F -+X
+	show = diff-highlight | less -+F -+X
 
 [interactive]
 	diffFilter = diff-highlight
