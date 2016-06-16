@@ -155,7 +155,7 @@
   autocorrect = true
 
 [branch "master"]
-	mergeoptions = --no-edit
+	mergeoptions = --no-ff
 
 [pager]
 	diff = diff-highlight | less
