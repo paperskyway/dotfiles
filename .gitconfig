@@ -126,7 +126,7 @@
 	tags = tag
 	stashes = stash list
 	stashpatch = stash -p
-	addpatch = stash -p
+	addpatch = add -p
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
@@ -134,6 +134,7 @@
 	unmerged = diff --name-only --diff-filter=U
 	hash = rev-parse --short HEAD
 	unstage = reset HEAD --
+	loghist = log -p
 
 	# Pretty log
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
