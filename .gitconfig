@@ -28,7 +28,7 @@
 	autocrlf = input
 	editor = subl -n -w
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/andytung/dotfiles/.gitignore_global
+	excludesfile = ~/dotfiles/.gitignore_global
 
 [github]
 	user = andyytung
