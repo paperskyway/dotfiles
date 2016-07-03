@@ -100,6 +100,7 @@ alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
 alias copyhash="git rev-parse --short HEAD | pbcopy"
 alias wordcount="ls-files | xargs wc -l"
+alias lsport="lsof -i -n -P | grep LISTEN"
 
 #   Network Aliases
 #   ------------------------------------------------------------
