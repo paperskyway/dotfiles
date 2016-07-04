@@ -94,12 +94,13 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete" 
                                             #cleanupDS:     Cleanup .DS_store recursively
-alias mvscreenshots="mv ~/Desktop/*.png ~/Pictures/Screenshots/"
+alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/HTC\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/ && mv ~/Downloads/*.png ~/Pictures/HTC\ Screenshots/"
                                             #mvscreenshots: Move all screenshots on desktop to screenshot folder
 alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
 alias copyhash="git rev-parse --short HEAD | pbcopy"
 alias wordcount="ls-files | xargs wc -l"
+alias lsport="lsof -i -n -P | grep LISTEN"
 
 #   Network Aliases
 #   ------------------------------------------------------------
