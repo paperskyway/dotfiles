@@ -220,3 +220,5 @@ cdf() {
         echo 'No Finder window found' >&2
     fi
 }
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
