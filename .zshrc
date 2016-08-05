@@ -5,7 +5,7 @@ export ZSH=~/dotfiles/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,3 +82,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#   Sourcing
+#   ------------------------------------------------------------
+if [ -f ~/dotfiles/.aliases ]; then
+    . ~/dotfiles/.aliases
+fi
+
+# bindkey -e
+# bindkey '^[[1;9C' forward-word
+# bindkey '^[[1;9D' backward-word

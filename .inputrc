@@ -4,3 +4,6 @@ set colored-stats on
 set visible-stats on
 set mark-symlinked-directories on
 set show-all-if-ambiguous on
+
+# "\e[1;9D": backward-word
+# "\e[1;9C": forward-word
