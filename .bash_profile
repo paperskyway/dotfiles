@@ -104,6 +104,8 @@ alias lsport="lsof -i -n -P | grep LISTEN"
 
 #   Network Aliases
 #   ------------------------------------------------------------
+alias myexternalIP='curl ipecho.net/plain ; echo'
+alias mylocalIP='ipconfig getifaddr en1'
 alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' 
                                             #networkstatus  Show network statuses
 

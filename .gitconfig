@@ -31,7 +31,10 @@
 	excludesfile = ~/dotfiles/.gitignore_global
 
 [github]
-	user = andyytung
+	user = andytung
+
+[bitbucket]
+	user = andytung
 
 # ==================================
 # 2. Tools
