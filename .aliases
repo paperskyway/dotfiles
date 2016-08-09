@@ -2,6 +2,17 @@
 #     ALIASES
 #   -------------------------------
 
+#   Set Paths
+#   ------------------------------------------------------------
+export GOPATH="$HOME/dotfiles/bin"
+export PATH="$PATH:$GOPATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/"
+
+#   Set Default Editor
+#   ------------------------------------------------------------
+export EDITOR="subl"
+
+
 #   Version Aliases
 #   ------------------------------------------------------------
 alias pip='pip3'

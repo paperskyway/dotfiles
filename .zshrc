@@ -54,8 +54,6 @@ DEFAULT_USER=`whoami`
 plugins=(git)
 
 # User configuration
-
-export PATH="/usr/local/bin:/Users/andytung/dotfiles/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
