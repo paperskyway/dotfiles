@@ -20,7 +20,7 @@ alias python='python3'
 
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
-alias bpro="subl ~/.bash_profile"
+alias bpro="subl ~/dotfiles/.aliases"
 alias new="open -a Terminal '$HOME'"
 docs() { cd ~/Documents/; }
 
