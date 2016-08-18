@@ -139,18 +139,20 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>455 287 744 297 0 0 1440 878 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>412 364 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>297 231 796 473 0 0 1440 878 </string>
+	<string>161 276 918 512 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>515 342 717 435 0 0 1440 878 </string>
+	<string>4 443 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>555 334 717 435 0 0 1440 878 </string>
+	<string>555 335 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>160 83 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>260 443 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>239 2 717 435 0 0 1440 878 </string>
+	<string>246 330 717 435 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -361,7 +363,7 @@
 			<key>Custom Command</key>
 			<string>Yes</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1456,12 +1458,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-05T06:37:40Z</date>
+	<date>2016-08-16T17:15:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.7</string>
 </dict>
 </plist>
