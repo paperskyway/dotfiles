@@ -135,7 +135,7 @@
 	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 	precommit = diff --cached --diff-algorithm=minimal -w
 	unmerged = diff --name-only --diff-filter=U
-	hash = rev-parse --short HEAD
+	hash = "!f() { git rev-parse --short HEAD | tee /dev/tty | pbcopy; }; f"
 	unstage = reset HEAD --
 	loghist = log -p
 
@@ -150,6 +150,7 @@
 	# Serve local repo. http://coderwall.com/p/eybtga
     # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
     serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
 
 # ==================================
 # 6. Config
