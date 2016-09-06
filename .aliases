@@ -77,7 +77,7 @@ alias lsport="lsof -i -n -P | grep LISTEN"
 #   Network Aliases
 #   ------------------------------------------------------------
 alias myipexternal='curl ipecho.net/plain ; echo'
-alias myiplocal='ipconfig getifaddr en0 && ipconfig getifaddr en1'
+alias myiplocal='ipconfig getifaddr en0 | echo && ipconfig getifaddr en1'
 alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' 
                                             #networkstatus  Show network statuses
 
