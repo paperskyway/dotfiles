@@ -2,6 +2,13 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"BracketHighlighter",
+		"Jade",
+		"SCSS",
+		"Seti_UX",
+		"SublimeCodeIntel",
+		"Trimmer",
+		"WordHighlight"
 	],
 	"installed_packages":
 	[

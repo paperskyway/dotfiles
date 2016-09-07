@@ -8,7 +8,14 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"BracketHighlighter",
+		"Jade",
+		"SCSS",
+		"Seti_UX",
+		"SublimeCodeIntel",
+		"Trimmer",
+		"Vintage",
+		"WordHighlight"
 	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
