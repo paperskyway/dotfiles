@@ -164,8 +164,8 @@
 
 [pager]
 	log = less -FSRXc
-	diff = diff-highlight | less -FSRXc
-	show = diff-highlight | less -FSRXc
+	diff = diff-highlight | less -FSRX
+	show = diff-highlight | less -FSRX
 
 [interactive]
 	diffFilter = diff-highlight
