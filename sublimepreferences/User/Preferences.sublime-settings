@@ -4,6 +4,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/Material-Theme-Darker-OceanicNext (SL).tmTheme",
 	"fade_fold_buttons": false,
 	"font_size": 13,
+	"tab_size": 2,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
