@@ -6,7 +6,7 @@
 #  http://git-scm.com/docs/git-config
 #  https://gist.github.com/pksunkara/988716
 #
-#  https://github.com/blog/2019-how-to-undo-almost-anything-with-git	
+#  https://github.com/blog/2019-how-to-undo-almost-anything-with-git
 #
 # 	1. Personal
 # 	2. Tools
@@ -61,7 +61,7 @@
 
 [mergetool]
  	prompt = false
-  
+
 [mergetool "meld"]
   	trustExitCode = true
   	cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output \"$PWD/$MERGED\"
@@ -141,7 +141,7 @@
 
 	# Pretty log
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
-	
+
 	# Give only the last commit in log
 	last = log -1 HEAD
 	progress = !git --no-pager diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
@@ -163,9 +163,9 @@
 	mergeoptions = --no-ff
 
 [pager]
-	log = less -FSRX
-	diff = diff-highlight | less -FSRX
-	show = diff-highlight | less -FSRX
+	log = less -FRX
+	diff = diff-highlight | less -FRX
+	show = diff-highlight | less -FRX
 
 [interactive]
 	diffFilter = diff-highlight
@@ -174,7 +174,7 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-	
+
 [commit]
 	template = ~/dotfiles/.git-commit-template.txt
 	verbose = true

@@ -33,7 +33,7 @@ alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias lsa='ls -aGp'							# List all
 alias lss='du -sh *'
 alias ll='ls -FGlAhp'                      # List with a bunch of tags
-alias less='less -FSRX'                    # Preferred 'less' implementation
+alias less='less -FRX'                    # Preferred 'less' implementation
 alias diff='colordiff'
 alias ftp='lftp'
 alias top='htop'
@@ -65,7 +65,7 @@ alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
 alias show_options='shopt'                  # Show_options: display bash options settings
 alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
-alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete" 
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
                                             #cleanupDS:     Cleanup .DS_store recursively
 alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/HTC\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/ && mv ~/Downloads/*.png ~/Pictures/HTC\ Screenshots/"
                                             #mvscreenshots: Move all screenshots on desktop to screenshot folder
@@ -78,7 +78,7 @@ alias lsport="lsof -i -n -P | grep LISTEN"
 #   ------------------------------------------------------------
 alias myipexternal='curl ipecho.net/plain ; echo'
 alias myiplocal='ipconfig getifaddr en0 | echo && ipconfig getifaddr en1'
-alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' 
+alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN'
                                             #networkstatus  Show network statuses
 
 #   -------------------------------
@@ -112,27 +112,27 @@ randpassw() {
     else
         MAXSIZE=$1
     fi
-    array1=( 
-        q w e r t y u i o p a s d f g h j k l z x c v b n m Q W E R T Y U I O P A S D 
-        F G H J K L Z X C V B N M 1 2 3 4 5 6 7 8 9 0 
-        \! \@ \$ \% \^ \& \* \! \@ \$ \% \^ \& \* \@ \$ \% \^ \& \* 
-        ) 
-    MODNUM=${#array1[*]} 
-    pwd_len=0 
-    while [ $pwd_len -lt $MAXSIZE ] 
-    do 
-    index=$(($RANDOM%$MODNUM)) 
-    echo -n "${array1[$index]}" 
-    ((pwd_len++)) 
-	done 
-	echo 
+    array1=(
+        q w e r t y u i o p a s d f g h j k l z x c v b n m Q W E R T Y U I O P A S D
+        F G H J K L Z X C V B N M 1 2 3 4 5 6 7 8 9 0
+        \! \@ \$ \% \^ \& \* \! \@ \$ \% \^ \& \* \@ \$ \% \^ \& \*
+        )
+    MODNUM=${#array1[*]}
+    pwd_len=0
+    while [ $pwd_len -lt $MAXSIZE ]
+    do
+    index=$(($RANDOM%$MODNUM))
+    echo -n "${array1[$index]}"
+    ((pwd_len++))
+	done
+	echo
 }
 
 # mcd:  akes new Dir and jumps inside
 # ---------------------------------------------------------
-mkcd () { 
+mkcd () {
     mkdir -p "$1" && cd "$1"
-} 
+}
 
 # chrome:  Open in chrome
 # ---------------------------------------------------------
@@ -156,7 +156,7 @@ macdown() {
 # ---------------------------------------------------------
 killport() {
     echo -e "\e[31mPort '${1}' has been killed.\e[0m"
-    lsof -i TCP:$1 | awk '/LISTEN/ {print $2}' | xargs kill -9 
+    lsof -i TCP:$1 | awk '/LISTEN/ {print $2}' | xargs kill -9
 }
 
 # findfile: find the file you specify
