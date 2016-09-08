@@ -163,7 +163,7 @@
 	mergeoptions = --no-ff
 
 [pager]
-	log = less -FSRXc
+	log = less -FSRX
 	diff = diff-highlight | less -FSRX
 	show = diff-highlight | less -FSRX
 
