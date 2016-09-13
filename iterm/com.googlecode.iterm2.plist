@@ -101,10 +101,8 @@
 	</dict>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Pictures</string>
+	<string>~/dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -138,21 +136,21 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>455 287 744 297 0 0 1440 878 </string>
+	<string>995 596 579 219 0 0 2560 1418 </string>
+	<key>NSWindow Frame Preferences</key>
+	<string>414 615 606 456 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>412 364 620 392 0 0 1440 878 </string>
+	<string>972 769 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>161 276 918 512 0 0 1440 878 </string>
+	<string>523 461 1016 502 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 443 717 435 0 0 1440 878 </string>
+	<string>364 141 717 435 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>555 335 717 435 0 0 1440 878 </string>
+	<string>4 983 717 435 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>160 83 717 435 0 0 1440 878 </string>
+	<string>364 141 717 435 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>260 443 717 435 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>246 330 717 435 0 0 1440 878 </string>
+	<string>406 95 717 435 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -546,7 +544,7 @@
 				<key>0xf702-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
 					<string>b</string>
 				</dict>
@@ -581,7 +579,7 @@
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
-					<integer>11</integer>
+					<integer>10</integer>
 					<key>Text</key>
 					<string>f</string>
 				</dict>
@@ -1376,10 +1374,14 @@
 			<string>/Users/Pacified</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>99110D04-9498-4ADC-8457-77401376A052</string>
+	<string>86726D3F-835F-4D92-AD1A-EDB8A0FD273E</string>
 	<key>NoSyncLastTipTime</key>
-	<real>492071845.97006297</real>
+	<real>489608715.64996499</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1387,28 +1389,17 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>491658838.22232097</real>
+	<real>486593852.505889</real>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>485285303.65145099</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>485285303.651685</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
 		<string>0000</string>
-		<string>0001</string>
-		<string>0002</string>
-		<string>0003</string>
-		<string>0004</string>
-		<string>0005</string>
-		<string>0006</string>
-		<string>0007</string>
-		<string>0008</string>
-		<string>0009</string>
-		<string>0010</string>
-		<string>0011</string>
-		<string>0010</string>
-		<string>0011</string>
-		<string>0012</string>
-		<string>0013</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1454,16 +1445,14 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=92</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=64</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-16T17:15:05Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
+	<date>2016-09-13T16:49:41Z</date>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.0.7</string>
+	<string>3.0.9</string>
 </dict>
 </plist>
