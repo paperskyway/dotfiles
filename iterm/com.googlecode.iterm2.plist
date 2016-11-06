@@ -130,27 +130,20 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>995 596 579 219 0 0 2560 1418 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>414 615 606 456 0 0 2560 1418 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>972 769 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>523 461 1016 502 0 0 2560 1418 </string>
+	<string>269 122 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>364 141 717 435 0 0 2560 1418 </string>
+	<string>183 107 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>4 983 717 435 0 0 2560 1418 </string>
+	<string>199 348 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>364 141 717 435 0 0 2560 1418 </string>
+	<string>693 409 717 435 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>406 95 717 435 0 0 2560 1418 </string>
+	<string>294 107 717 435 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>260 443 717 435 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>281 422 717 435 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1374,33 +1367,18 @@
 			<string>/Users/Pacified</string>
 		</dict>
 	</array>
-	<key>NoSyncConfirmBeta</key>
-	<true/>
-	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>86726D3F-835F-4D92-AD1A-EDB8A0FD273E</string>
-	<key>NoSyncLastTipTime</key>
-	<real>489608715.64996499</real>
+	<string>6306F168-D3F3-4EA9-874A-F29F99CFC200</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
-	<true/>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>486593852.505889</real>
-	<key>NoSyncTimeOfLastPromo</key>
-	<real>485285303.65145099</real>
-	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>485285303.651685</real>
-	<key>NoSyncTipsDisabled</key>
-	<true/>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>000</string>
-		<string>0000</string>
-	</array>
+	<real>495495390.80312002</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>PointerActions</key>
@@ -1445,13 +1423,19 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=64</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=33</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-13T16:49:41Z</date>
+	<date>2016-09-25T03:24:11Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.9</string>
 </dict>

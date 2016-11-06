@@ -4,8 +4,9 @@
 
 #   Set Paths
 #   ------------------------------------------------------------
-export GOPATH="$HOME/dotfiles/bin:/usr/local/bin"
-export PATH="$GOPATH:$PATH"
+export GOPATH=""
+export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
+export PATH="${BINPATH}:${GOPATH}:${PATH}"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/"
 
 #   Set Default Editor
@@ -67,7 +68,7 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
                                             #cleanupDS:     Cleanup .DS_store recursively
-alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/HTC\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/ && mv ~/Downloads/*.png ~/Pictures/HTC\ Screenshots/"
+alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/"
                                             #mvscreenshots: Move all screenshots on desktop to screenshot folder
 alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
@@ -157,18 +158,6 @@ macdown() {
 killport() {
     echo -e "\e[31mPort '${1}' has been killed.\e[0m"
     lsof -i TCP:$1 | awk '/LISTEN/ {print $2}' | xargs kill -9
-}
-
-# findfile: find the file you specify
-# ---------------------------------------------------------
-findfile() {
-	find . -type f -name "$1"
-}
-
-# finddir: find the directory you specify
-# ---------------------------------------------------------
-finddir() {
-	find . -type d -name "$1"
 }
 
 # grepline: find a pattern recursively in all files
