@@ -14,5 +14,6 @@
 	"line_padding_top": 0,
 	"save_on_focus_lost": false,
 	"tab_size": 2,
+	"scroll_past_end": true,
 	"theme": "Default.sublime-theme"
 }
