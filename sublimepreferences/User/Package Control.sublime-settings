@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Material Theme",
+		"SideBarEnhancements"
 	],
 	"installed_packages":
 	[
