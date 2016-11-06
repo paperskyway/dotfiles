@@ -8,8 +8,6 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Material Theme",
-		"SideBarEnhancements",
 		"Vintage"
 	],
 	"line_padding_bottom": 0,
