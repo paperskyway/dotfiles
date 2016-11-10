@@ -183,3 +183,7 @@ cdf() {
         echo 'No Finder window found' >&2
     fi
 }
+
+if [ -f ~/dotfiles/.ng-cli-completions ]; then
+	. ~/dotfiles/.ng-cli-completions
+fi
