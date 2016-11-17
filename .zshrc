@@ -88,3 +88,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/dotfiles/.aliases ]; then
     . ~/dotfiles/.aliases
 fi
+
+fpath=(/usr/local/share/zsh-completions $fpath)

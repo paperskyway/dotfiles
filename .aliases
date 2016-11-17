@@ -184,6 +184,10 @@ cdf() {
     fi
 }
 
-if [ -f ~/dotfiles/.ng-cli-completions ]; then
-	. ~/dotfiles/.ng-cli-completions
+if [ -f ~/dotfiles/ng2.completion.sh ]; then
+	. ~/dotfiles/ng2.completion.sh
+fi
+
+if [ -f ~/dotfiles/azure.completion.sh ]; then
+    . ~/dotfiles/azure.completion.sh
 fi
