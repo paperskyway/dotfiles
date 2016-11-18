@@ -83,6 +83,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#   Key Bindings
+#   ------------------------------------------------------------
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^X\\x7f" backward-kill-line
+
 #   Sourcing
 #   ------------------------------------------------------------
 if [ -f ~/dotfiles/.aliases ]; then
