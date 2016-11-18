@@ -9,9 +9,10 @@ export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${GOPATH}:${PATH}"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-#   Set Default Editor
+#   Set Default
 #   ------------------------------------------------------------
 export EDITOR="subl"
+export SHELL="/usr/local/bin/zsh"
 
 
 #   Version Aliases
