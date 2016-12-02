@@ -8,7 +8,7 @@ export GOPATH=""
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${GOPATH}:${PATH}"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=$(/usr/local/opt/android-sdk)
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------
