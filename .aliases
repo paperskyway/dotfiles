@@ -76,6 +76,7 @@ alias listallapp="sudo find / -iname *.app"
 alias sizeof="du -hs"
 alias wordcount="ls-files | xargs wc -l"
 alias lsport="lsof -i -n -P | grep LISTEN"
+alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 
 #   Network Aliases
 #   ------------------------------------------------------------

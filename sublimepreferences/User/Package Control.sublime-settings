@@ -1,24 +1,9 @@
 {
-	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
-		"Alignment",
-		"All Autocomplete",
-		"AutoFileName",
-		"BracketHighlighter",
-		"Color Highlighter",
-		"EditorConfig",
-		"Emmet",
-		"GitGutter",
-		"Markdown Preview",
-		"Material Theme",
-		"Package Control",
-		"SideBarEnhancements",
-		"SublimeCodeIntel",
-		"SublimeLinter",
-		"WordHighlight"
+		"Package Control"
 	]
 }

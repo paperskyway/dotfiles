@@ -41,7 +41,7 @@
 # ==================================
 
 [web]
-	browser = google-chrome
+	browser = firefox
 
 [diff]
     tool = Kaleidoscope
@@ -114,22 +114,12 @@
 # ==================================
 
 [alias]
-	addall = add --all
-	co = checkout
-	comast = checkout master
-	ci = commit
 	comend = commit --amend --no-edit
-	comender = commit --amend
 	st = status
-	br = branch
-	rb = rebase
-	rev = remote -v
 	stat = !git --no-pager diff --stat
 	branches = branch -a
 	tags = tag
 	stashes = stash list
-	stashpatch = stash -p
-	addpatch = add -p
 	remotes = remote -v
 	nuke = !git reset --hard HEAD && git clean -d -f
 	sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
@@ -137,20 +127,15 @@
 	unmerged = diff --name-only --diff-filter=U
 	hash = "!f() { git rev-parse --short HEAD | tee /dev/tty | pbcopy; }; f"
 	unstage = reset HEAD --
-	loghist = log -p
-
-	# Pretty log
+	filelog = log -p
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
-
-	# Give only the last commit in log
 	last = log -1 HEAD
 	progress = !git --no-pager diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
 	up = !git fetch && git rebase --autostash FETCH_HEAD
-
-	# Serve local repo. http://coderwall.com/p/eybtga
-  # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
-  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+	# Serve local repo. http://coderwall.com/p/eybtga
+	# Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
+	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 
 # ==================================
 # 6. Config
@@ -178,3 +163,9 @@
 [commit]
 	template = ~/dotfiles/.git-commit-template.txt
 	verbose = true
+
+[push]
+	default = simple
+
+[credential]
+	helper = osxkeychain

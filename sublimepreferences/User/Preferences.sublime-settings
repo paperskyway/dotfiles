@@ -1,19 +1,8 @@
 {
-	"bold_folder_labels": false,
-	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Material-Theme-Darker-OceanicNext (SL).tmTheme",
-	"fade_fold_buttons": false,
-	"font_size": 13,
-	"highlight_line": false,
-	"highlight_modified_tabs": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"close_windows_when_empty": true,
 	"ignored_packages":
 	[
 		"Vintage"
-	],
-	"line_padding_bottom": 0,
-	"line_padding_top": 0,
-	"save_on_focus_lost": false,
-	"scroll_past_end": true,
-	"tab_size": 2,
-	"theme": "Default.sublime-theme"
+	]
 }
