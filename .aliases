@@ -12,7 +12,7 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------
-export EDITOR="subl"
+export EDITOR="vim"
 export SHELL="/usr/local/bin/zsh"
 
 
@@ -23,7 +23,7 @@ alias python='python3'
 
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
-alias bpro="subl ~/dotfiles/.aliases"
+alias bpro="vim ~/dotfiles/.aliases"
 alias new="open -a Terminal '$HOME'"
 docs() { cd ~/Documents/; }
 
@@ -62,7 +62,7 @@ alias ~="cd ~"                              # ~: Go Home
 
 #   Other Aliases
 #   ------------------------------------------------------------
-alias edit='subl'                        # edit:         Opens any file in sublime editor
+alias edit='vim'                        # edit:         Opens any file in vim editor
 alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
 alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
