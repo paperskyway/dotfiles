@@ -32,3 +32,4 @@ if [ -f ~/dotfiles/.aliases ]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+eval $(/usr/libexec/path_helper -s)

@@ -150,30 +150,11 @@ safari() {
     open -a "Safari" $@
 }
 
-# markdown:  Open in macdown
-# ---------------------------------------------------------
-macdown() {
-    open -a "MacDown" $@
-}
-
 # killport: kills the port you specify
 # ---------------------------------------------------------
 killport() {
     echo -e "\e[31mPort '${1}' has been killed.\e[0m"
     lsof -i TCP:$1 | awk '/LISTEN/ {print $2}' | xargs kill -9
-}
-
-# grepline: find a pattern recursively in all files
-# ---------------------------------------------------------
-grepline() {
-    grep -rni "$@" .
-}
-
-# changelanguage: change the language of an application
-# ---------------------------------------------------------
-changelanguage() {
-    defaults write -app "$1" AppleLanguages -array "$2"
-    defaults read -g AppleLanguages
 }
 
 # cdf: cd to the path of the front Finder window
