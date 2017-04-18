@@ -4,12 +4,6 @@
 #
 #  ---------------------------------------------------------------------------
 
-#   Sourcing
-#   ------------------------------------------------------------
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
-fi
-
 #   Change Prompt
 #   ------------------------------------------------------------
 export PS1="\u@\w$ "
@@ -27,6 +21,8 @@ export LSCOLORS="exExxxxxbxxGxGxGxGexex" # Blue
 export LS_COLORS="fi=00:di=96:ln=01;96:pi=00:do=00:bd=00:cd=00:or=00:so=00:su=00:sg=00:tw=00:ow=96:st=96:ex=34;01" # Turquoise
 # export LS_COLORS="fi=00:di=31:ln=01;31:pi=00:do=00:bd=00:cd=00:or=00:so=00:su=00:sg=00:tw=00:ow=31:st=31:ex=34;01" # Red
 
+#   Sourcing
+#   ------------------------------------------------------------
 if [ -f ~/dotfiles/.aliases ]; then
     . ~/dotfiles/.aliases
 fi

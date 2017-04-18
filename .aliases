@@ -1,4 +1,4 @@
-#   -------------------------------
+ #   -------------------------------
 #     ALIASES
 #   -------------------------------
 
@@ -24,8 +24,8 @@ alias python='python3'
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
 alias bpro="vim ~/dotfiles/.aliases"
-alias new="open -a Terminal '$HOME'"
-docs() { cd ~/Documents/; }
+# alias new="open -a Terminal '$HOME'"
+# docs() { cd ~/Documents/; }
 
 #   Basic Aliases Preferences
 #   ------------------------------------------------------------
@@ -33,14 +33,12 @@ alias ls='ls -Gp'                           # Preferred ‘ls’ implementation
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias lsa='ls -aGp'							# List all
+alias lsa='ls -aGp'			    # List all
 alias lss='du -sh *'
 alias ll='ls -FGlAhp'                      # List with a bunch of tags
-alias less='less -FRX'                    # Preferred 'less' implementation
 alias diff='colordiff'
 alias ftp='lftp'
 alias top='htop'
-alias meld='open -W -a Meld'
 
 #   Directory Aliases
 #   ------------------------------------------------------------
@@ -62,19 +60,18 @@ alias ~="cd ~"                              # ~: Go Home
 
 #   Other Aliases
 #   ------------------------------------------------------------
-alias edit='vim'                        # edit:         Opens any file in vim editor
-alias finder='open -a Finder ./'            # f:            Opens current directory in MacOS Finder
+alias edit='vim'                       # edit:         Opens any file in vim editor
+alias finder='open -a Finder ./'       # f:            Opens current directory in MacOS Finder
 alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
-alias show_options='shopt'                  # Show_options: display bash options settings
 alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
                                             #cleanupDS:     Cleanup .DS_store recursively
 alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/"
                                             #mvscreenshots: Move all screenshots on desktop to screenshot folder
-alias listallapp="sudo find / -iname *.app"
-alias sizeof="du -hs"
-alias wordcount="ls-files | xargs wc -l"
+# alias listallapp="sudo find / -iname *.app"
+# alias sizeof="du -hs"
+# alias wordcount="ls-files | xargs wc -l"
 alias lsport="lsof -i -n -P | grep LISTEN"
 alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 
@@ -89,12 +86,6 @@ alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN'
 #     FUNCTIONS
 #   -------------------------------
 
-# zipf:  creates a ZIP archive of a folder
-# ---------------------------------------------------------
-zipf () {
-    zip -r "$1".zip "$1"
-}
-
 # trash:  Move a folder or file to the trash
 # ---------------------------------------------------------
 trash () {
@@ -106,30 +97,6 @@ trash () {
 # ---------------------------------------------------------
 ql () {
     qlmanage -p "$*" >& /dev/null
-}
-
-# randpassw:  Generates a random password
-# ---------------------------------------------------------
-randpassw() {
-    if [ -z $1 ]; then
-        MAXSIZE=10
-    else
-        MAXSIZE=$1
-    fi
-    array1=(
-        q w e r t y u i o p a s d f g h j k l z x c v b n m Q W E R T Y U I O P A S D
-        F G H J K L Z X C V B N M 1 2 3 4 5 6 7 8 9 0
-        \! \@ \$ \% \^ \& \* \! \@ \$ \% \^ \& \* \@ \$ \% \^ \& \*
-        )
-    MODNUM=${#array1[*]}
-    pwd_len=0
-    while [ $pwd_len -lt $MAXSIZE ]
-    do
-    index=$(($RANDOM%$MODNUM))
-    echo -n "${array1[$index]}"
-    ((pwd_len++))
-	done
-	echo
 }
 
 # mcd:  akes new Dir and jumps inside
@@ -167,11 +134,3 @@ cdf() {
         echo 'No Finder window found' >&2
     fi
 }
-
-if [ -f ~/dotfiles/ng2.completion.sh ]; then
-	. ~/dotfiles/ng2.completion.sh
-fi
-
-if [ -f ~/dotfiles/azure.completion.sh ]; then
-    . ~/dotfiles/azure.completion.sh
-fi

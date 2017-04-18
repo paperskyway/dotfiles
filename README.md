@@ -3,10 +3,6 @@
 ##Usage
 
 ```
-rm ~/.gitconfig
-rm ~/.inputrc
-rm ~/.bash_profile
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ./syncdotfiles.sh
 ```
 

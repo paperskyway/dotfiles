@@ -127,7 +127,6 @@
 	unmerged = diff --name-only --diff-filter=U
 	hash = "!f() { git rev-parse --short HEAD | tee /dev/tty | pbcopy; }; f"
 	unstage = reset HEAD --
-	filelog = log -p
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
 	last = log -1 HEAD
 	progress = !git --no-pager diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
@@ -145,12 +144,12 @@
   autocorrect = true
 
 [branch "master"]
-	mergeoptions = --no-ff
+#	mergeoptions = --no-ff
 
 [pager]
-	log = less -FRX
-	diff = diff-highlight | less -FRX
-	show = diff-highlight | less -FRX
+	log = less
+	diff = diff-highlight | less
+	show = diff-highlight | less
 
 [interactive]
 	diffFilter = diff-highlight
