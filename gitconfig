@@ -147,9 +147,9 @@
 #	mergeoptions = --no-ff
 
 [pager]
-	log = less
-	diff = diff-highlight | less
-	show = diff-highlight | less
+	log = less -X
+	diff = diff-highlight | less -X
+	show = diff-highlight | less -X
 
 [interactive]
 	diffFilter = diff-highlight
