@@ -1,4 +1,4 @@
- #   -------------------------------
+#   -------------------------------
 #     ALIASES
 #   -------------------------------
 
@@ -12,7 +12,7 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------
-export EDITOR="vim"
+export EDITOR="nvim"
 export SHELL="/usr/local/bin/zsh"
 
 
@@ -23,7 +23,7 @@ alias python='python3'
 
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
-alias bpro="vim ~/dotfiles/.aliases"
+alias bpro="nvim ~/dotfiles/.aliases"
 # alias new="open -a Terminal '$HOME'"
 # docs() { cd ~/Documents/; }
 
@@ -39,6 +39,7 @@ alias ll='ls -FGlAhp'                      # List with a bunch of tags
 alias diff='colordiff'
 alias ftp='lftp'
 alias top='htop'
+alias vim='nvim'
 
 #   Directory Aliases
 #   ------------------------------------------------------------
@@ -60,7 +61,7 @@ alias ~="cd ~"                              # ~: Go Home
 
 #   Other Aliases
 #   ------------------------------------------------------------
-alias edit='vim'                       # edit:         Opens any file in vim editor
+alias edit='nvim'                      # edit:         Opens any file in vim editor
 alias finder='open -a Finder ./'       # f:            Opens current directory in MacOS Finder
 alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
