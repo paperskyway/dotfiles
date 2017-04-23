@@ -23,8 +23,8 @@ export LS_COLORS="fi=00:di=96:ln=01;96:pi=00:do=00:bd=00:cd=00:or=00:so=00:su=00
 
 #   Sourcing
 #   ------------------------------------------------------------
-if [ -f ~/dotfiles/.aliases ]; then
-    . ~/dotfiles/.aliases
+if [ -f ~/dotfiles/aliases ]; then
+    . ~/dotfiles/aliases
 fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

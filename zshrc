@@ -91,8 +91,8 @@ bindkey "^X\\x7f" backward-kill-line
 
 #   Sourcing
 #   ------------------------------------------------------------
-if [ -f ~/dotfiles/.aliases ]; then
-    . ~/dotfiles/.aliases
+if [ -f ~/dotfiles/aliases ]; then
+    . ~/dotfiles/aliases
 fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
