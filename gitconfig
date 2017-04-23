@@ -127,6 +127,7 @@
 	unmerged = diff --name-only --diff-filter=U
 	hash = "!f() { git rev-parse --short HEAD | tee /dev/tty | pbcopy; }; f"
 	unstage = reset HEAD --
+	discard = checkout --
 	list = log --graph --all --pretty=format:'%C(green)%h%C(cyan)%d%C(reset) %s %C(dim)- %an, %C(reset)%C(red)%ar%C(reset)'
 	last = log -1 HEAD
 	progress = !git --no-pager diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
