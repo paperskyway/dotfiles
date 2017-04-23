@@ -95,6 +95,14 @@ if [ -f ~/dotfiles/aliases ]; then
     . ~/dotfiles/aliases
 fi
 
+if [ -f /usr/local/opt/fzf/shell/completion.zsh ]; then
+    . /usr/local/opt/fzf/shell/completion.zsh
+fi
+
+if [ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]; then
+    . /usr/local/opt/fzf/shell/key-bindings.zsh
+fi
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 eval $(/usr/libexec/path_helper -s)

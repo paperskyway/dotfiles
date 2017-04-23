@@ -27,6 +27,14 @@ if [ -f ~/dotfiles/aliases ]; then
     . ~/dotfiles/aliases
 fi
 
+if [ -f /usr/local/opt/fzf/shell/completion.bash ]; then
+    . /usr/local/opt/fzf/shell/completion.bash
+fi
+
+if [ -f /usr/local/opt/fzf/shell/key-bindings.bash ]; then
+    . /usr/local/opt/fzf/shell/key-bindings.bash
+fi
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 fi
