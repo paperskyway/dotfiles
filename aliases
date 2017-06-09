@@ -16,8 +16,6 @@ export SHELL="/usr/local/bin/zsh"
 
 #   Version Aliases
 #   ------------------------------------------------------------
-alias pip='pip3'
-alias python='python3'
 
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
