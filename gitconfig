@@ -168,4 +168,10 @@
 	default = simple
 
 [credential]
-	helper = osxkeychain
+	helper = cache
+
+[branch]
+    autosetuprebase = always
+
+[rerere]
+    enabled = true
