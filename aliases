@@ -11,8 +11,7 @@ export PATH="${BINPATH}:${GOPATH}:${PATH}"
 
 #   Set Default
 #   ------------------------------------------------------------
-export EDITOR="nvim"
-export SHELL="/usr/local/bin/zsh"
+export EDITOR="vim"
 
 
 #   Version Aliases
