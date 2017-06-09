@@ -3,19 +3,11 @@
 #   -------------------------------
 
 #   Set Paths
-<<<<<<< Updated upstream
+
 #   ------------------------------------------------------------
 export GOPATH="$HOME/gocode/bin"
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${GOPATH}:${PATH}"
-=======
-#   ------------------------------------------------------------nd
-#
-export BINPATH="$HOME/dotfiles/bin:/usr/local/bin:/usr/local/sbin"
-export PATH="${BINPATH}:${PATH}"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME="/usr/local/opt/android-sdk"
->>>>>>> Stashed changes
 
 #   Set Default
 #   ------------------------------------------------------------
