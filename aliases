@@ -7,8 +7,6 @@
 export GOPATH=""
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${GOPATH}:${PATH}"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------
@@ -39,7 +37,6 @@ alias ll='ls -FGlAhp'                      # List with a bunch of tags
 alias diff='colordiff'
 alias ftp='lftp'
 alias top='htop'
-alias vim='nvim'
 
 #   Directory Aliases
 #   ------------------------------------------------------------
@@ -74,7 +71,7 @@ alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/Saved/ && mv 
 # alias sizeof="du -hs"
 # alias wordcount="ls-files | xargs wc -l"
 alias lsport="lsof -i -n -P | grep LISTEN"
-alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
+# alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 
 #   Network Aliases
 #   ------------------------------------------------------------
