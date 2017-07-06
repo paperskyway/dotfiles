@@ -273,6 +273,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>B1364AAA-5C92-43FE-848D-93941E78A3CA</string>
+	<key>DisableWindowSizeSnap</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
