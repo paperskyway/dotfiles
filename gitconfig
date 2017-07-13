@@ -22,7 +22,7 @@
 
 [user]
 	name = Andy Tung
-	email = andyytung@gmail.com
+	email = andytung@uber.com
 
 [core]
 	autocrlf = input
@@ -76,15 +76,25 @@
 
 [url "https://bitbucket.org/"]
     insteadOf = bb:
-
 [url "https://github.com/"]
     insteadOf = gh:
-
 [url "https://gist.github.com/"]
     insteadOf = gist:
-
 [url "https://github.com/andyytung/"]
     insteadOf = andy_gh:
+
+[url "ssh://gitolite@code.uber.internal/"]
+	insteadOf = git://code.uber.internal/
+[url "ssh://git@github.com/uber/"]
+	insteadOf = https://github.com/uber/
+[url "ssh://code.uber.internal/"]
+	insteadOf = https://code.uber.internal/
+[url "ssh://config.uber.internal/"]
+	insteadOf = https://config.uber.internal/
+[http "https://gopkg.uberinternal.com"]
+	followRedirects = true
+[http "https://gopkg.in"]
+    followRedirects = true
 
 # ==================================
 # 4. Colours
@@ -120,7 +130,7 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p
-	comend = commit --amend --no-edit
+	amend = commit --amend --no-edit
 	st = status
 	stat = !git --no-pager diff --stat
 	branches = branch -a
@@ -176,3 +186,5 @@
 
 [credential]
 	helper = osxkeychain
+[rerere]
+	enabled = true
