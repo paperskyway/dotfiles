@@ -750,9 +750,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2066 98 779 357 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1570 323 918 381 1440 -180 1920 1058 </string>
+	<string>1957 190 918 381 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2400 -180 960 1058 1440 -180 1920 1058 </string>
+	<string>1440 -180 1920 1058 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2400 443 732 435 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2866,13 +2866,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.3713659942150116</real>
+				<real>0.50905120372772217</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.87939631938934326</real>
+				<real>0.74280524253845215</real>
 				<key>Red Component</key>
-				<real>0.69346785545349121</real>
+				<real>0.53603297472000122</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -2905,13 +2905,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12890245020389557</real>
+				<real>0.97450423240661621</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.14712244272232056</real>
+				<real>0.0032058954238891602</real>
 				<key>Red Component</key>
-				<real>0.69160306453704834</real>
+				<real>0.97091853618621826</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -2944,13 +2944,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.13826943933963776</real>
+				<real>0.013443180359899998</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.88415688276290894</real>
+				<real>0.73085355758666992</real>
 				<key>Red Component</key>
-				<real>0.59543848037719727</real>
+				<real>0.096024803817272186</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -2983,13 +2983,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12890245020389557</real>
+				<real>0.97450423240661621</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.14712244272232056</real>
+				<real>0.0032058954238891602</real>
 				<key>Red Component</key>
-				<real>0.69160306453704834</real>
+				<real>0.97091853618621826</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
