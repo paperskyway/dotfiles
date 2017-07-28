@@ -94,7 +94,7 @@
 [http "https://gopkg.uberinternal.com"]
 	followRedirects = true
 [http "https://gopkg.in"]
-    followRedirects = true
+	followRedirects = true
 
 # ==================================
 # 4. Colours
@@ -124,6 +124,7 @@
 # ==================================
 
 [alias]
+    a = add
     co = checkout
     ci = commit
     br = branch
