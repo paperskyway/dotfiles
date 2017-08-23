@@ -124,7 +124,8 @@
 # ==================================
 
 [alias]
-    a = add
+    a = add -a
+    d = diff
     co = checkout
     ci = commit
     br = branch
