@@ -180,6 +180,8 @@ syntax on
 set ruler
 set relativenumber
 set number
+set mouse=a
+set relativenumber
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
