@@ -80,8 +80,7 @@ alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 #   ------------------------------------------------------------
 alias myexternalip='curl ipecho.net/plain ; echo'
 alias mylocalip='(ipconfig getifaddr en0 ; ipconfig getifaddr en1) | tee /dev/tty | pbcopy'
-alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN'
-                                            #networkstatus  Show network statuses
+alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' #networkstatus  Show network statuses
 
 #   -------------------------------
 #     FUNCTIONS
