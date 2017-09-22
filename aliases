@@ -5,7 +5,7 @@
 #   Set Paths
 
 #   ------------------------------------------------------------
-export GOPATH="$HOME/gocode"
+export GOPATH="$HOME/gocode/bin"
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${GOPATH}:${PATH}"
 
@@ -56,7 +56,7 @@ alias ~="cd ~"                              # ~: Go Home
 
 #   Other Aliases
 #   ------------------------------------------------------------
-alias edit='nvim'                      # edit:         Opens any file in vim editor
+alias edit='vim'                      # edit:         Opens any file in vim editor
 alias finder='open -a Finder ./'       # f:            Opens current directory in MacOS Finder
 alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
@@ -75,8 +75,7 @@ alias lsport="lsof -i -n -P | grep LISTEN"
 #   ------------------------------------------------------------
 alias myexternalip='curl ipecho.net/plain ; echo'
 alias mylocalip='(ipconfig getifaddr en0 ; ipconfig getifaddr en1) | tee /dev/tty | pbcopy'
-alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN'
-                                            #networkstatus  Show network statuses
+alias networkstatus='netstat -an -f inet -p tcp | grep LISTEN' #networkstatus  Show network statuses
 
 #   -------------------------------
 #     FUNCTIONS
