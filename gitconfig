@@ -187,7 +187,7 @@
 [push]
 	default = simple
 
-[credentials]
+[credential]
 	helper = cache
 
 [rerere]
