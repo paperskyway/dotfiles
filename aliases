@@ -5,9 +5,9 @@
 #   Set Paths
 
 #   ------------------------------------------------------------
-export GOPATH="$HOME/gocode/bin"
-export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
-export PATH="${BINPATH}:${GOPATH}:${PATH}"
+#export GOPATH="$HOME/gocode/bin"
+#export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
+#export PATH="${BINPATH}:${GOPATH}:${PATH}"
 
 #   Set Default
 #   ------------------------------------------------------------
