@@ -12,7 +12,7 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------
-export EDITOR="nvim"
+export EDITOR="vim"
 export SHELL="/usr/local/bin/zsh"
 
 
@@ -39,7 +39,7 @@ alias ll='ls -FGlAhp'                      # List with a bunch of tags
 alias diff='colordiff'
 alias ftp='lftp'
 alias top='htop'
-alias vim='nvim'
+# alias vim='nvim'
 
 #   Directory Aliases
 #   ------------------------------------------------------------
