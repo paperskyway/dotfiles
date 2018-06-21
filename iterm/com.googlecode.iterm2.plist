@@ -10,6 +10,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>CheckTestRelease</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -745,15 +747,19 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 477 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>357 433 918 452 0 0 1680 1028 </string>
+	<string>357 396 1016 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 520 836 508 0 0 1680 1028 </string>
+	<string>840 520 836 508 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 520 836 508 0 0 1680 1028 </string>
+	<string>840 0 840 514 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 514 840 514 0 0 1680 1028 </string>
+	<string>840 520 836 508 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>275 0 780 495 0 0 1680 1028 </string>
+	<string>840 6 836 508 0 0 1680 1028 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>840 0 840 514 0 0 1680 1028 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>0 0 840 514 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1425,6 +1431,8 @@
 			<string>/Users/Pacified</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1485,7 +1493,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-05T22:45:29Z</date>
+	<date>2018-06-11T23:19:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
