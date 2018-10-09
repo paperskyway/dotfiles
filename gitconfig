@@ -167,10 +167,12 @@
 #	mergeoptions = --no-ff
 
 [pager]
-    log = less -X
-    diff = diff-highlight | less -X
-    show = diff-highlight | less -X
-	branch = diff-highlight | less -X
+    branch = less -FX
+    log = less -FX
+    diff = diff-highlight | less -FX
+    show = diff-highlight | less -FX
+	branch = diff-highlight | less -FX
+    blame = less -FX
 
 [interactive]
 	diffFilter = diff-highlight

@@ -4,7 +4,7 @@
 
 #   Set Paths
 #   ------------------------------------------------------------
-export GOPATH="$HOME/gocode"
+export GOPATH="$HOME/workspace/gocode"
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${PATH}:${GOPATH//://bin:}/bin"
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -18,8 +18,8 @@ export SHELL="/usr/local/bin/zsh"
 
 #   Version Aliases
 #   ------------------------------------------------------------
-alias pip='pip3'
-alias python='python3'
+# alias pip='pip3'
+# alias python='python3'
 
 #  Currently working on projects/Directory navigation
 #  ------------------------------------------------------------
