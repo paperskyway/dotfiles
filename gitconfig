@@ -85,8 +85,6 @@
 
 [url "ssh://gitolite@code.uber.internal/"]
 	insteadOf = git://code.uber.internal/
-[url "ssh://git@github.com/uber/"]
-	insteadOf = https://github.com/uber/
 [url "ssh://code.uber.internal/"]
 	insteadOf = https://code.uber.internal/
 [url "ssh://config.uber.internal/"]
@@ -194,3 +192,7 @@
 	helper = osxkeychain
 [rerere]
 	enabled = true
+[branch]
+	autosetuprebase = always
+[url "ssh://git@github.com/uber/"]
+	insteadof = https://github.com/uber/
