@@ -5,6 +5,8 @@
 #   Set Paths
 #   ------------------------------------------------------------
 export GOPATH="$HOME/workspace/gocode"
+export PATH=$PATH:$GOPATH/bin
+
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${PATH}:${GOPATH//://bin:}/bin"
 export JAVA_HOME=$(/usr/libexec/java_home)
