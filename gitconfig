@@ -22,7 +22,7 @@
 
 [user]
 	name = Andy Tung
-	email = andytung@uber.com
+	email = andyytung@gmail.com
 
 [core]
 	autocrlf = input
@@ -130,7 +130,7 @@
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p
-	amend = commit --amend --no-edit
+    amend = commit --amend --no-edit
 	st = status
 	stat = !git --no-pager diff --stat
 	branches = branch -a

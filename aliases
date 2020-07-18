@@ -9,7 +9,7 @@ export PATH=$PATH:$GOPATH/bin
 
 export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
 export PATH="${BINPATH}:${PATH}:${GOPATH//://bin:}/bin"
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
@@ -153,6 +153,7 @@ alias vocaloid="cd /Library/Application\ Support"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
+condainit() {
 __conda_setup="$('/Users/andytung/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -164,4 +165,6 @@ else
     fi
 fi
 unset __conda_setup
+}
 # <<< conda initialize <<<
+
