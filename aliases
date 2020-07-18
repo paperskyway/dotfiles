@@ -17,19 +17,6 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 export EDITOR="vim"
 export SHELL="/usr/local/bin/zsh"
 
-
-#   Version Aliases
-#   ------------------------------------------------------------
-# alias pip='pip3'
-# alias python='python3'
-
-#  Currently working on projects/Directory navigation
-#  ------------------------------------------------------------
-alias bpro="vim ~/dotfiles/.aliases"
-# alias new="open -a Terminal '$HOME'"
-# docs() { cd ~/Documents/; }
-alias workspace="cd ~/workspace"
-
 #   Basic Aliases Preferences
 #   ------------------------------------------------------------
 alias ls='ls -Gp'                           # Preferred ‘ls’ implementation
@@ -64,21 +51,34 @@ alias ~="cd ~"                              # ~: Go Home
 
 #   Other Aliases
 #   ------------------------------------------------------------
-alias edit='nvim'                      # edit:         Opens any file in vim editor
+alias edit='vim'                      # edit:         Opens any file in vim editor
 alias finder='open -a Finder ./'       # f:            Opens current directory in MacOS Finder
 alias which='type'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\, }'         # path:         Echo all executable Paths
-alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
                                             #cleanupDS:     Cleanup .DS_store recursively
 alias mvscreenshots="mkdir ~/Pictures/Mac\ Screenshots/ ~/Pictures/Saved/ && mv ~/Desktop/*.png ~/Pictures/Mac\ Screenshots/"
-                                            #mvscreenshots: Move all screenshots on desktop to screenshot folder
-# alias listallapp="sudo find / -iname *.app"
-# alias sizeof="du -hs"
-# alias wordcount="ls-files | xargs wc -l"
+                                            #mvscreenshots: Move all screenshots on desktop to screenshot folde
+alias sizeof="du -hs"
+alias wordcount="ls-files | xargs wc -l"
 alias lsport="lsof -i -n -P | grep LISTEN"
 alias brewup="brew update; brew upgrade; brew prune; brew cleanup; brew doctor"
 alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
+
+# alias listallapp="sudo find / -iname *.app"
+# alias fix_terminal='stty sane'              # fix_stty:     Restore terminal settings when screwed up
+
+#   Version Aliases
+#   ------------------------------------------------------------
+# alias pip='pip3'
+# alias python='python3'
+
+#  Currently working on projects/Directory navigation
+#  ------------------------------------------------------------
+# alias bpro="vim ~/dotfiles/.aliases"
+# alias new="open -a Terminal '$HOME'"
+# docs() { cd ~/Documents/; }
+# alias workspace="cd ~/workspace"
 
 #   Network Aliases
 #   ------------------------------------------------------------
@@ -142,3 +142,26 @@ cdf() {
 if [ -f ~/.customrc ]; then
     . ~/.customrc
 fi
+
+# music stuff
+# ----------------------------------------------------------
+alias massive="cd /Library/Application\ Support/Native\ Instruments/Massive/Sounds"
+alias serum="cd /Users/Shared/Serum\ Presets"
+alias vst="cd /Library/Audio/Plug-Ins/"
+alias sylenth="cd ~/Library/Application\ Support/LennarDigital/Sylenth1"
+alias vocaloid="cd /Library/Application\ Support"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/andytung/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/andytung/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/andytung/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/andytung/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
