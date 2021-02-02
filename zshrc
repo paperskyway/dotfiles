@@ -37,7 +37,7 @@ DEFAULT_USER=`whoami`
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -106,4 +106,6 @@ fi
 fpath=(/usr/local/share/zsh-completions $fpath)
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 eval $(/usr/libexec/path_helper -s)
+
+# hooking direnv
 eval "$(direnv hook zsh)"

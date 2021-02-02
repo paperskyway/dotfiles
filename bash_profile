@@ -42,3 +42,4 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 eval $(/usr/libexec/path_helper -s)
 eval "$(direnv hook bash)"
+source /Users/andytung/.gradle/jv1/.gradle/caches/okbuck/buck-completion.bash

@@ -22,13 +22,14 @@
 
 [user]
 	name = Andy Tung
-	email = andyytung@gmail.com
+	email = andytung@uber.com
 
 [core]
 	autocrlf = input
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/dotfiles/gitignore_global
+	untrackedCache = true
 
 [github]
 	user = andytung
@@ -159,7 +160,7 @@
 # ==================================
 
 [help]
-  autocorrect = true
+# autocorrect = true
 
 [branch "master"]
 #	mergeoptions = --no-ff
@@ -196,3 +197,7 @@
 	autosetuprebase = always
 [url "ssh://git@github.com/uber/"]
 	insteadof = https://github.com/uber/
+[credential "https://git.uberinternal.com"]
+	helper = usso
+[credential "https://vfs4g-cache.uberinternal.com"]
+	helper = usso
