@@ -7,10 +7,10 @@
 export GOPATH="$HOME/workspace/gocode"
 # export PATH=$PATH:$GOPATH/bin
 
-export BINPATH="$HOME/dotfiles/bin:/usr/local/bin"
+export BINPATH="$HOME/dotfiles/bin:/opt/homebrew/bin"
 export PATH="${BINPATH}:${PATH}:${GOPATH//://bin:}/bin"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME="/usr/local/opt/android-sdk"
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 #   Set Default
 #   ------------------------------------------------------------

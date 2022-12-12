@@ -109,3 +109,5 @@ eval $(/usr/libexec/path_helper -s)
 
 # hooking direnv
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
